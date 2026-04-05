@@ -1,10 +1,9 @@
-// Image paths - CHANGE THESE TO YOUR IMAGE PATHS
+// Image paths
 const images = {
-    login: 'https://res.cloudinary.com/derjw5vy6/image/upload/v1775376947/sign-in_m0el9q.jpg',    // Your login image
-    signup: 'https://res.cloudinary.com/derjw5vy6/image/upload/v1775377813/sign-up_uivkql.jpg'   // Your signup image
+    login: 'https://res.cloudinary.com/derjw5vy6/image/upload/v1775376947/sign-in_m0el9q.jpg',    
+    signup: 'https://res.cloudinary.com/derjw5vy6/image/upload/v1775377813/sign-up_uivkql.jpg' 
 };
 
-// Get elements
 const loginForm = document.getElementById('loginForm');
 const signupForm = document.getElementById('signupForm');
 const sideImage = document.getElementById('sideImage');
@@ -55,17 +54,17 @@ function togglePassword(inputId) {
     
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        button.textContent = '🙈'; // Change icon when password is visible
+        button.textContent = '🙈';
     } else {
         passwordInput.type = 'password';
-        button.textContent = '👁️'; // Change icon back
+        button.textContent = '👁️';
     }
 }
 
 // Add smooth transition to image
 sideImage.style.transition = 'opacity 0.3s ease';
 
-// Prevent form submission for demo (remove this in production)
+// Prevent form submission for demo 
 document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
