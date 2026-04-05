@@ -28,8 +28,7 @@ It is not intended to be a production-ready application, but rather a hands-on p
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-
+- HTML
+- CSS
+- JavaScript
 ## Folder Structure (Example)
